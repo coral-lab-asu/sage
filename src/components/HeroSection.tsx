@@ -38,13 +38,14 @@ const HeroSection = () => {
             for Retrieval of Heterogeneous Data
           </p>
 
-          {/* Conference badge */}
+          {/* Conference badge 
           <div className="mb-8">
             <span className="inline-block px-4 py-1.5 rounded-full bg-secondary text-secondary-foreground text-sm font-medium tracking-wide">
               ACL 2026 (Under Review)
             </span>
           </div>
-
+            */}
+            
           {/* Authors */}
           <div className="flex flex-wrap justify-center gap-x-4 gap-y-2 mb-2">
             {authors.map((author, i) => (

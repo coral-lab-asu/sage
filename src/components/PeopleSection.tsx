@@ -1,33 +1,44 @@
+import prashamTitiya from "@/assets/prasham_titiya.jpeg";
+import rohitKhoja from "@/assets/rohit_khoja.jpg";
+import tomerWolfson from "@/assets/tomer_wolfson.jpg";
+import vivekGupta from "@/assets/vivek_gupta.jpg";
+import danRoth from "@/assets/dan_roth.jpg";
+
 const people = [
   {
     name: "Prasham Titiya",
     role: "Co-first Author",
     affiliation: "Arizona State University",
     link: "https://www.linkedin.com/in/prasham-titiya-99b686205",
+    image: prashamTitiya,
   },
   {
     name: "Rohit Khoja",
     role: "Co-first Author",
     affiliation: "Arizona State University",
     link: "https://www.linkedin.com/in/rohit-khoja344/",
+    image: rohitKhoja,
   },
   {
     name: "Tomer Wolfson",
     role: "Co-second Author",
     affiliation: "University of Pennsylvania",
     link: "https://tomerwolgithub.github.io/",
+    image: tomerWolfson,
   },
   {
     name: "Vivek Gupta",
     role: "Co-second Author",
     affiliation: "Arizona State University",
     link: "https://vgupta123.github.io/",
+    image: vivekGupta,
   },
   {
     name: "Dan Roth",
     role: "Author",
     affiliation: "University of Pennsylvania",
     link: "https://www.cis.upenn.edu/~danroth/",
+    image: danRoth,
   },
 ];
 
@@ -43,11 +54,13 @@ const PeopleSection = () => {
               href={person.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex flex-col items-center text-center gap-3 p-4 rounded-xl border border-border bg-card hover:border-primary/40 transition-colors"
+              className="group flex flex-col items-center text-center gap-3 p-2 rounded-xl border border-border bg-card hover:border-primary/40 transition-colors"
             >
-              <div className="w-16 h-16 rounded-full bg-accent flex items-center justify-center text-primary font-serif font-bold text-xl">
-                {person.name.split(" ").map((n) => n[0]).join("")}
-              </div>
+              <img
+                src={person.image}
+                alt={person.name}
+                className="w-24 h-24 rounded-full object-cover"
+              />
               <div>
                 <p className="font-medium text-foreground text-sm group-hover:text-primary transition-colors">
                   {person.name}
